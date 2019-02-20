@@ -17,6 +17,18 @@ describe('sort in ascending order', () => {
         expect(sort([])).to.eql([]);
     });
 
+    it('should sort letters', () => {
+        expect(sort(['a','b','c'])).to.have.ordered.members(['a','b','c']);
+    });
+
+    it('should handle type', () => {
+        expect(sort([1,2,3])).to.be.an('array');
+    });
+
+    it('should have length of 3', () => {
+        expect(sort([1, 2, 3])).to.have.lengthOf(3);
+    });
+
         //handles all positive
         //handles all negative
         //handles mix of positive and negative

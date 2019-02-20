@@ -28,11 +28,4 @@ describe('sort in ascending order', () => {
     it('should have length of 3', () => {
         expect(sort([1, 2, 3])).to.have.lengthOf(3);
     });
-
-        //handles all positive
-        //handles all negative
-        //handles mix of positive and negative
-        //handles empty
-    //throws error if not numbers
-    //throws error is NaN?
 });
